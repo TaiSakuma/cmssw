@@ -7,11 +7,11 @@
 #include "DataFormats/VertexReco/interface/Vertex.h"
 #include "DataFormats/VertexReco/interface/VertexFwd.h"
 #include "DataFormats/Candidate/interface/Candidate.h"
-#include "DataFormats/METReco/interface/SigInputObj.h"
 
 #include "RecoMET/METPUSubtraction/interface/noPileUpMEtUtilities.h"
 #include "DataFormats/METReco/interface/PFMEtSignCovMatrix.h"
 #include "RecoMET/METAlgorithms/interface/significanceAlgo.h"
+#include "RecoMET/METAlgorithms/interface/SigInputObj.h"
 
 #include <math.h>
 

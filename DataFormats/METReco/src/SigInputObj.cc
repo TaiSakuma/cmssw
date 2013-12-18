@@ -4,7 +4,7 @@
 // Package:    METAlgorithms
 // Class:      SigInputObj
 // 
-/**\class METSignificance SigInputObj.cc RecoMET/METAlgorithms/src/SigInputObj.cc
+/**\class METSignificance SigInputObj.cc DataFormats/METReco/src/SigInputObj.cc
 
  Description: <one line class summary>
 

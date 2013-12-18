@@ -20,7 +20,6 @@
 
 #include "DataFormats/JetReco/interface/PileupJetIdentifier.h"
 
-
 // ----------------------------------------------------------------------------------------------------
 class PileupJetIdAlgo {
 public:
