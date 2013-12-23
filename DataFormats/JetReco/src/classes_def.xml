@@ -157,6 +157,11 @@
   <class name="reco::PFClusterJetFwdPtrVector"/>
   <class name="edm::Wrapper<reco::PFClusterJetFwdPtrVector>"/>
 
+  <class name="StoredPileupJetIdentifier"/>
+  <class name="std::vector<StoredPileupJetIdentifier>"/>
+  <class name="edm::ValueMap<StoredPileupJetIdentifier>"/>
+  <class name="edm::Wrapper<edm::ValueMap<StoredPileupJetIdentifier> >"/>
+
 
   <class pattern="edm::AssociationVector<*>">
     <field name="transientVector_" transient="true"/>

@@ -33,6 +33,8 @@
 #include "DataFormats/METReco/interface/CorrMETData.h"
 #include "DataFormats/METReco/interface/AnomalousECALVariables.h"
 #include "DataFormats/METReco/interface/BoundaryInformation.h"
+#include "DataFormats/METReco/interface/MVAMEtData.h"
+#include "DataFormats/METReco/interface/MVAMEtDataFwd.h"
 
 #include <vector>
 namespace {
@@ -106,7 +108,10 @@ namespace {
     edm::reftobase::RefHolder<reco::PFMETRef> dummy35;
     edm::reftobase::RefHolder<reco::PFClusterMETRef> dummy40;
     // used for backward compatibility
-    std::vector<CommonMETData> bcv1;
+    CommonMETData CMDdummy1;
+    edm::Wrapper<CommonMETData> CMDdummy2;
+    std::vector<CommonMETData> CMDdummy3;
+    edm::Wrapper<std::vector<CommonMETData> > CMDdummy4;
 
     std::vector<SpecificCaloMETData> bcv2;
     std::vector<SpecificPFMETData> bpfv2;
@@ -144,6 +149,14 @@ namespace {
     edm::Wrapper<CorrMETData> dummy42;
     std::vector<CorrMETData> dummy43;
     edm::Wrapper<std::vector<CorrMETData> > dummy44;
+
+    reco::MVAMEtJetInfo dummyMVAMEtJetInfo;
+    reco::MVAMEtJetInfoCollection dummyMVAMEtJetInfoCollection;
+    edm::Wrapper<reco::MVAMEtJetInfoCollection> dummyMVAMEtJetInfoCollectionWrapped;
+
+    reco::MVAMEtPFCandInfo dummyMVAMEtPFCandInfo;
+    reco::MVAMEtPFCandInfoCollection dummyMVAMEtPFCandInfoCollection;
+    edm::Wrapper<reco::MVAMEtPFCandInfoCollection> dummyMVAMEtPFCandInfoCollectionWrapped;
 
     AnomalousECALVariables dummyBE20;
     edm::Wrapper<AnomalousECALVariables> dummyBE21;

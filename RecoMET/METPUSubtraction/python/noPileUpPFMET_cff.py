@@ -24,7 +24,7 @@ puJetIdForNoPileUpPFMEt = pileupJetIdProducer.clone(
     jets = cms.InputTag("calibratedAK5PFJetsForNoPileUpPFMEt"),
     applyJec = cms.bool(False),
     inputIsCorrected = cms.bool(True),
-    residualsTxt = cms.FileInPath("JetMETCorrections/METPUSubtraction/data/dummy.txt"),
+    residualsTxt = cms.FileInPath("RecoMET/METPUSubtraction/data/dummy.txt"),
 )
 noPileUpPFMEtSequence += puJetIdForNoPileUpPFMEt
 
