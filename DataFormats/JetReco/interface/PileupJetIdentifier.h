@@ -8,8 +8,8 @@
 #include <string>
 #include <map>
 
-#ifndef RecoJets_JetProducers_interface_PileupJetIdentifier_h
-#define RecoJets_JetProducers_interface_PileupJetIdentifier_h
+#ifndef DataFormats_JetReco_interface_PileupJetIdentifier_h
+#define DataFormats_JetReco_interface_PileupJetIdentifier_h
 
 #define DECLARE_VARIABLE(NAME,TYPE)		\
 	private: \
