@@ -11,12 +11,12 @@ ak5PFJetSequenceForNoPileUpPFMEt = cms.Sequence(calibratedAK5PFJetsForNoPileUpPF
 noPileUpPFMEtSequence += ak5PFJetSequenceForNoPileUpPFMEt
 
 from RecoJets.JetProducers.PileupJetID_cfi import pileupJetIdProducer
-from RecoJets.JetProducers.PileupJetIDParams_cfi import full_53x
-from RecoJets.JetProducers.PileupJetIDCutParams_cfi import full_53x_wp
+from RecoJets.JetProducers.PileupJetIDParams_cfi import full_5x
+from RecoJets.JetProducers.PileupJetIDCutParams_cfi import full_5x_wp
 puJetIdForNoPileUpPFMEt = pileupJetIdProducer.clone(
     algos = cms.VPSet(
-        full_53x.clone(
-            JetIdParams = full_53x_wp
+        full_5x.clone(
+            JetIdParams = full_5x_wp
         )
     ),
     produceJetIds = cms.bool(True),
